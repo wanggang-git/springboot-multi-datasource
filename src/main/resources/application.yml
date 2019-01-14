@@ -1,0 +1,33 @@
+
+spring:
+  primary:
+    datasource:
+      url: jdbc:mysql://localhost:3306/test1?useUnicode=true
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+  secondary:
+    datasource:
+      url: jdbc:mysql://localhost:3306/test2?useUnicode=true
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+
+
+
+server:
+  port: 9999
+
+
+
+
+
+
+
+
